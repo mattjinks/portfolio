@@ -1,0 +1,14 @@
+<div class="filters" fxLayout="row" fxLayoutAlign="start center">
+  <button mat-stroked-button class="{{ home ? 'filter-button-on' : 'filter-button-off' }}" (click)="showHomePage()">
+    Home
+  </button>
+  <button mat-stroked-button class="{{ experience ? 'filter-button-on' : 'filter-button-off' }}" (click)="showExperience()">
+    Experience & Projects
+  </button>
+  <button mat-stroked-button class="{{ resume ? 'filter-button-on' : 'filter-button-off' }}" (click)="showResume()">
+    Resume
+  </button>
+  <button mat-stroked-button class="{{ contact ? 'filter-button-on' : 'filter-button-off' }}" (click)="showContactPage()">
+    Contact
+  </button>
+</div>

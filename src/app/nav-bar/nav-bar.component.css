@@ -1,0 +1,22 @@
+.filters {
+  display: flex;
+  gap: 10px;
+  padding-left: 18%;
+  padding-top: 10px;
+  padding-bottom: 24px;
+}
+
+.filter-button-off {
+  background-color: rgb(29, 29, 29);
+  color: white !important;
+}
+
+.filter-button-on {
+  /* background-color: #727272; */
+  background-color: rgb(18, 90, 43);
+  color: white !important;
+}
+
+.filter-button:hover {
+  background-color: #727272 !important; /* Change to this color when hovered */
+}

@@ -1,0 +1,19 @@
+<div>
+  <div class="description-container" (click)="toggleExpanded()">
+    <section-header [title]="'Assignment Description'" [expanded]="expanded"></section-header>
+  </div>
+  <div class="content" *ngIf="expanded">
+    <p>
+      For this third project, you will work in teams comprised of three students to conduct a
+      privacy impact assessment (PIA) of the voter registration records that someone on your
+      team successfully obtained as part of the request submitted for Project #1.
+    </p>
+    <p>
+      For your PIA analysis: Given the data you were able to obtain, think about the possible
+      ways in which attackers or malicious actors might use the data. What are the risks of
+      having the data? Given the list from the state that has the most kinds of data, analyze
+      that state compared to the state that has fewer voter data elements available. Etc.
+    </p>
+    <br>
+  </div>
+<div>

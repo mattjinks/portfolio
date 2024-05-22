@@ -1,0 +1,52 @@
+<div>
+  <div (click)="toggleExpanded()">
+    <section-header [title]="'API Endpoints'" [expanded]="expanded"></section-header>
+  </div>
+  <div class="content-container" *ngIf="expanded">
+    <div class="content">
+      <h2>Products</h2>
+      <p class="bullet">
+        <span class="bold-text">• INDEX: '/products' [GET]</span>
+        Retrieves a list of all products available in the storefront
+      </p>
+      <p>
+        <span class="bold-text">•	INDEX: '/products/?category=categoryName' [GET]</span>
+        Retrieves a list of products filtered by a specific category
+      </p>
+      <p>
+        <span class="bold-text">•	SHOW: '/products/:id' [GET]</span>
+        Retrieves the details of a single product, indentified by its ID
+      </p>
+      <p>
+        <span class="bold-text">•	CREATE [ token required ]: '/products' [POST]</span>
+        Adds a new product to the storefront. Requires an authentication token to ensure only authorized users can create products
+      </p>
+
+      <h2>Users</h2>
+      <p class="bullet">
+        <span class="bold-text">•	Index [ token required ]: '/users' [GET]</span>
+        Retrieves a list of all users. Access requires auth token to ensure only authorized users can retrieve users
+      </p>
+      <p>
+        <span class="bold-text">•	Show [ token required ]: '/users/:id' [GET]</span>
+        Retrieves the details of a single user, identified by its ID. Access requires auth token to ensure only authorized users can retrieve user details
+      </p>
+      <p>
+        <span class="bold-text">•	Create [ token required ]: '/users' [POST]</span>
+        Adds a new user to the storefront
+      </p>
+
+      <h2>Orders</h2>
+      <p class="bullet">
+        <span class="bold-text">•	SHOW [ token required ]: '/users/:userId/orders/current' [GET]</span>
+        Current Order by user (args: user id)
+      </p>
+      <p>
+        <span class="bold-text">•	INDEX [ token required ]: '/users/:userID/orders/completed' [GET]</span>
+        Completed Orders by user (args: user id)
+      </p>
+      <br>
+    </div>
+  </div>
+</div>
+

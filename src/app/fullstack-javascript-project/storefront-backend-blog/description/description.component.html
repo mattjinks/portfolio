@@ -1,0 +1,54 @@
+<div>
+  <div class="description-container" (click)="toggleExpanded()">
+    <section-header [title]="'Description'" [expanded]="expanded"></section-header>
+  </div>
+  <div class="content" *ngIf="expanded">
+    <h1>
+      Build Backend for Online-Store
+    </h1>
+    <p><span class="bold-text">GitHub: </span><a href="https://github.com/mattjinks/online-store-backend">https://github.com/mattjinks/online-store-backend</a></p>
+    <p>
+      This project builds a backend API that powers an online store application.
+    </p>
+    <br>
+    <p class="bold-text">
+      Key experiences gained from this project include:
+    </p>
+    <p >
+      • Database schema design/implementation
+    </p>
+    <p>
+      • API endpoint design/implementation
+    </p>
+    <p>
+      • Password hashing
+    </p>
+    <p>
+      • Token authentication
+    </p>
+    <p>
+      • Unit testing
+    </p>
+    <br>
+    <p class="bold-text">
+      Technologies Used:
+    </p>
+    <p><span class="bold-text">• Postgres </span>for database</p>
+    <p>
+      <span class="bold-text">• Express</span> (Node framework) for implementing RESTful APIs
+    </p>
+    <p>
+      <span class="bold-text">• dotenv</span> from npm (node package manager) for managing environment variables
+    </p>
+    <p>
+      <span class="bold-text">• db-migrate</span> from npm for database migrations
+    </p>
+    <p>
+      <span class="bold-text">• jsonwebtoken</span> from npm for working with JWTs (Authentication, Authorization, Verification)
+    </p>
+    <p>
+      <span class="bold-text">• jasmine</span> from npm testing
+    </p>
+    <br>
+  </div>
+<div>

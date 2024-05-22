@@ -1,0 +1,31 @@
+.content-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;         /* Make main-content a flex container */
+  flex-direction: column;
+}
+
+.content img {
+  width: 95%;
+}
+
+.bold-text {
+  font-weight: bolder;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.caption {
+  font-style: italic;
+}
+
+.bullet {
+  padding-left: 0px;
+}

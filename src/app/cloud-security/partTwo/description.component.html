@@ -1,0 +1,8 @@
+<div>
+  <div class="description-container" (click)="toggleExpanded()">
+    <section-header [title]="'Part 2: Cloud Security Policy'" [expanded]="expanded"></section-header>
+  </div>
+  <div class="content" *ngIf="expanded">
+    <embed src="../../../assets/group_07_part2.pdf" type="application/pdf" width="100%" height="600px">
+  </div>
+<div>

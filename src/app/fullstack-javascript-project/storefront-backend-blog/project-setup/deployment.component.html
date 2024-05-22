@@ -1,0 +1,13 @@
+<div (click)="toggleExpanded()">
+  <section-header [title]="'Deployment'" [expanded]="expanded"></section-header>
+</div>
+<div>
+  <div class="content" *ngIf="expanded">
+    <img src="../../../../assets/deployment-diagram.png">
+    <p>Using Azure Pipelines, I built a pipeline that runs three tasks:</p>
+    <p>1. Build a Docker image</p>
+    <p>2.	Push image to Azure Container Registry</p>
+    <p>3.	Deploy image to Azure Webapp</p>
+    <br>
+  </div>
+</div>

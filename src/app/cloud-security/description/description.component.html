@@ -1,0 +1,26 @@
+<div>
+  <div class="description-container" (click)="toggleExpanded()">
+    <section-header [title]="'Assignment Description'" [expanded]="expanded"></section-header>
+  </div>
+  <div class="content" *ngIf="expanded">
+    <h2 class="bold-text">
+      Instructions
+    </h2>
+    <p >
+      As businesses transition from on-premises solutions to cloud computing, many of them face new challenges in keeping their new cloud infrastructure secure. In this project, you will work as part of a team to draft a corporate Cloud Security Policy and accompanying documents that address risks in a company’s usage of cloud computing.
+    </p>
+    <p>
+      <span class="bold-text">Assignment:</span> You report to the Chief Information Security Officer (CISO) at an imaginary bank, Burdell Bank. With its tens of thousands of employees, Burdell Bank manages about $400 billion in assets across several business lines in the United States. Executive leadership just announced an upcoming, company-wide initiative to replace decades-old, on-premises computing infrastructure with a modern cloud provider. To prepare for the change, the CISO has asked your team for three deliverables.
+    </p>
+    <p>
+      • <span class="bold-text">Part 1:</span> In this initial memo to the CISO, explain the key cybersecurity threats facing the bank that are especially relevant to using the cloud compared to the bank’s past practice. This memo has a maximum of 800 words, not including references.
+    </p>
+    <p>
+      • <span class="bold-text">Part 2:</span> The CISO has asked your team to draft a Cloud Security Policy for the Burdell Bank, specifically addressing the threats from cloud computing, and mitigation techniques. The CISO wants the policy to align with NIST (National Institute of Standards and Technology) recommendations and comply with any relevant regulatory requirements and guidance from financial services regulators. The new policy will only cover the bank’s U.S. operations. Assume the company has in place cybersecurity policies for other topics, but not for cloud security. Your cybersecurity policy should be consistent with the threats identified in Part 1 as well as the recommendations in Part 3 to the organization’s management.
+    </p>
+    <p>
+      • <span class="bold-text">Part 3:</span> A Senior Vice President, Steve Cabrera, has asked your group to prepare a memorandum of no more than 1,000 words (not including references) justifying the new policy as a positive step for the business. Senior management will use your group’s memo in determining what steps it should take to manage risks resulting from shifting to a third-party cloud provider.
+    </p>
+    <br>
+  </div>
+<div>
