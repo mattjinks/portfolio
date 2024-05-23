@@ -60,7 +60,8 @@
   }
 
   .resume, .cloud, .security {
-    width: 100%; /* Full width for each item */
+    width: 85%; /* Full width for each item */
+    gap: 10px;
   }
 
   .content {
