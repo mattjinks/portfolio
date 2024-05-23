@@ -21,3 +21,9 @@
 section-header {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .main-content {
+    width: 90%;
+  }
+}

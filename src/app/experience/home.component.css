@@ -7,9 +7,6 @@
 }
 
 .content-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
-  grid-gap: 20px; /* Sets the gap between grid items */
   padding-left: 18%;
   padding-right: 18%;
 }
@@ -187,4 +184,14 @@
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    padding-left: 20px;
+  }
+
+  .backend, .cloud, .security {
+    width: 64%;
+  }
 }

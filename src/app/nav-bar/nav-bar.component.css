@@ -20,3 +20,11 @@
 .filter-button:hover {
   background-color: #727272 !important; /* Change to this color when hovered */
 }
+
+@media (max-width: 768px) {
+  .filters {
+    padding-bottom: 16px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+}
