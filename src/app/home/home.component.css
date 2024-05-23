@@ -61,11 +61,10 @@
 
   .resume, .cloud, .security {
     width: 85%; /* Full width for each item */
-    gap: 10px;
   }
 
   .content {
-    width: 95%;
+    width: 90%;
   }
 
   .highlights {
@@ -73,6 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
   }
 
   .material-symbols-outlined {
