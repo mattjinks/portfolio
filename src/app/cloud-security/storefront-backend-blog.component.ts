@@ -8,6 +8,8 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
 import { ObjectiveComponent } from "./objective/description.component";
 import { PartThreeComponent } from "./partThree/description.component";
 import { PartTwoComponent } from './partTwo/description.component';
+import { NavigationService } from '../navigation.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-storefront-backend-blog',
@@ -31,6 +33,11 @@ export class CloudSecurityComponent {
   isVisible: boolean = true; // Initially visible, set to false if you want it hidden initially
   expanded: boolean = false;
 
+  constructor(
+    private navService: NavigationService,
+    private router: Router
+  ) {}
+
   toggleVisibility(): void {
     this.isVisible = !this.isVisible;
     console.log(this.isVisible);
@@ -40,4 +47,11 @@ export class CloudSecurityComponent {
     this.expanded = !this.expanded;
     console.log(this.expanded);
   }
+
+  showExperience() {
+    this.navService.resetStates();
+    this.navService.setExperienceState(true);
+    this.router.navigate(['/experience']);
+  }
+
 }

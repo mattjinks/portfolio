@@ -27,3 +27,22 @@ section-header {
     width: 90%;
   }
 }
+
+.material-symbols-outlined {
+  padding: 0px;
+  padding-bottom: 5px;
+  color: blue;
+}
+
+.material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-size: smaller;
+}
+
+.back {
+  color: blue;
+  cursor: pointer;
+}

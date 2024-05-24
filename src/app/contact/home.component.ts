@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +12,12 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './home.component.css'
 })
 export class ContactComponent {
+  constructor(
+    private navService: NavigationService
+  ) {}
 
+  ngOnInit() {
+    this.navService.resetStates();
+    this.navService.setContactState(true);
+  }
 }

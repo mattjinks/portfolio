@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-home',
@@ -13,11 +14,12 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
   constructor(
-    private router: Router
+    private router: Router,
+    private navService: NavigationService
   ) {}
 
   showSecurityProject() {
-    this.router.navigate(['/cloud-security-project']);
+    this.router.navigate(['/storefront-backend-project']);
   }
 
   showCloudProject() {
@@ -26,5 +28,10 @@ export class HomeComponent {
 
   showResume() {
     this.router.navigate(['/resume']);
+  }
+
+  ngOnInit() {
+    this.navService.resetStates();
+    this.navService.setHomeState(true);
   }
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,8 @@ import { Router } from '@angular/router';
 export class ExperienceComponent {
 
   constructor(
-    private router: Router
+    private router: Router,
+    private navService: NavigationService
   ) {}
 
   showCloudProject() {
@@ -34,5 +36,10 @@ export class ExperienceComponent {
 
   showPrivacyProject() {
     this.router.navigate(['/privacy-project']);
+  }
+
+  ngOnInit() {
+    this.navService.resetStates();
+    this.navService.setExperienceState(true);
   }
 }

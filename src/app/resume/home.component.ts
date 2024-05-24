@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,8 @@ import { Router } from '@angular/router';
 export class ResumeComponent {
 
   constructor(
-    private router: Router
+    private router: Router,
+    private navService: NavigationService
   ) {}
 
   showSecurityProject() {
@@ -27,5 +29,10 @@ export class ResumeComponent {
 
   showResume() {
     this.router.navigate(['/resume']);
+  }
+
+  ngOnInit() {
+    this.navService.resetStates();
+    this.navService.setResumeState(true);
   }
 }

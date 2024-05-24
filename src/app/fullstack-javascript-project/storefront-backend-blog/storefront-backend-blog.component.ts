@@ -10,6 +10,8 @@ import { ApiEndpointsComponent } from "./api-endpoints/cloud-architecture.compon
 import { PasswordSecurityComponent } from "./password-security/user-interface.component";
 import { JwtComponent } from './web-tokens/deployment.component';
 import { UnitTestsComponent } from './unit-tests/deployment.component';
+import { NavigationService } from '../../navigation.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-storefront-backend-blog',
@@ -34,6 +36,11 @@ export class StorefrontBackendBlogComponent {
   isVisible: boolean = true; // Initially visible, set to false if you want it hidden initially
   expanded: boolean = false;
 
+  constructor(
+    private navService: NavigationService,
+    private router: Router
+  ) {}
+
   toggleVisibility(): void {
     this.isVisible = !this.isVisible;
     console.log(this.isVisible);
@@ -43,4 +50,16 @@ export class StorefrontBackendBlogComponent {
     this.expanded = !this.expanded;
     console.log(this.expanded);
   }
+
+  ngOnInit() {
+    this.navService.resetStates();
+    this.navService.setExperienceState(true);
+  }
+
+  showExperience() {
+    this.navService.resetStates();
+    this.navService.setExperienceState(true);
+    this.router.navigate(['/experience']);
+  }
+
 }

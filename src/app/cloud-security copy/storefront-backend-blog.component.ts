@@ -5,6 +5,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { DescriptionComponent } from './description/description.component';
 import { PartOneComponent } from "./partOne/description.component";
 import { SectionHeaderComponent } from './section-header/section-header.component';
+import { NavigationService } from '../navigation.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-storefront-backend-blog',
@@ -25,6 +27,11 @@ export class PrivacyComponent {
   isVisible: boolean = true; // Initially visible, set to false if you want it hidden initially
   expanded: boolean = false;
 
+  constructor(
+    private navService: NavigationService,
+    private router: Router
+  ) {}
+
   toggleVisibility(): void {
     this.isVisible = !this.isVisible;
     console.log(this.isVisible);
@@ -33,5 +40,11 @@ export class PrivacyComponent {
   toggleExpanded(): void {
     this.expanded = !this.expanded;
     console.log(this.expanded);
+  }
+
+  showExperience() {
+    this.navService.resetStates();
+    this.navService.setExperienceState(true);
+    this.router.navigate(['/experience']);
   }
 }
