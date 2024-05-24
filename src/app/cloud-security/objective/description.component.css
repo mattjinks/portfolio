@@ -25,3 +25,8 @@
 .bullet {
   padding-left: 0px;
 }
+
+.context {
+  color: green;
+  font-style: italic;
+}
