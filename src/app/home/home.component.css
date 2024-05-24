@@ -79,3 +79,8 @@
     font-size: 40px; /* Smaller icons on smaller screens */
   }
 }
+
+.website-info {
+  color: blue;
+  font-style: italic;
+}
