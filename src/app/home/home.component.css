@@ -84,3 +84,14 @@
   color: blue;
   font-style: italic;
 }
+
+.underline {
+  text-decoration: underline;
+}
+
+p {
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+

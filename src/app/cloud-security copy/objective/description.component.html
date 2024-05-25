@@ -1,0 +1,21 @@
+<div>
+  <div class="description-container" (click)="toggleExpanded()">
+    <section-header [title]="'Overview'" [expanded]="expanded"></section-header>
+  </div>
+  <div class="content" *ngIf="expanded">
+    <p class="context">This project was completed on a team of four for CS-4726: Privacy Technology, Policy, & Law</p>
+    <h1>
+      Privacy Impact Assessment
+    </h1>
+    <p>
+      <span class="bold-text">Conducted a Privacy Impact Assessment for the North Carolina State Board of Elections (NCSBE)</span> analyzing the collection and use of Personally Identifiable Information in voter records
+    </p>
+    <p>
+      •<span class="underline"> Assessed legal compliance and privacy risks</span> identifying vulnerabilities and misalignment with federal and state regulations including the Help America Vote Act
+    </p>
+    <p>
+      •<span class="underline"> Developed and recommended privacy-enhancing policies</span> to the NCSBE focusing on data security, access controls, and voter integrity
+    </p>
+    <br>
+  </div>
+<div>

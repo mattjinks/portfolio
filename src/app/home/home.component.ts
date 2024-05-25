@@ -19,7 +19,7 @@ export class HomeComponent {
   ) {}
 
   showSecurityProject() {
-    this.router.navigate(['/storefront-backend-project']);
+    this.router.navigate(['/cloud-security-project']);
   }
 
   showCloudProject() {

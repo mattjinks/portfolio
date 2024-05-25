@@ -7,6 +7,7 @@ import { PartOneComponent } from "./partOne/description.component";
 import { SectionHeaderComponent } from './section-header/section-header.component';
 import { NavigationService } from '../navigation.service';
 import { Router } from '@angular/router';
+import { ObjectiveComponent } from "./objective/description.component";
 
 @Component({
     selector: 'app-storefront-backend-blog',
@@ -20,7 +21,8 @@ import { Router } from '@angular/router';
         SectionHeaderComponent,
         DescriptionComponent,
         PartOneComponent,
-        PartOneComponent
+        PartOneComponent,
+        ObjectiveComponent
     ]
 })
 export class PrivacyComponent {
