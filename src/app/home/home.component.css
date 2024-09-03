@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .content-container h2 {
   margin: 0; /* Remove top/bottom margins */
   padding: 0;
