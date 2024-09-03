@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'storefront-backend-project', component: StorefrontBackendBlogComponent },
   { path: 'home', component: HomeComponent },
   { path: '', component: HomeComponent },
-  { path: 'experience', component: ExperienceComponent},
+  { path: 'projects', component: ExperienceComponent},
   { path: 'cloud-security-project', component: CloudSecurityComponent},
   { path: 'privacy-project', component: PrivacyComponent},
   { path: 'contact', component: ContactComponent},

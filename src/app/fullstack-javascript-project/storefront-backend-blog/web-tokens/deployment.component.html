@@ -1,22 +1,17 @@
-<div (click)="toggleExpanded()">
-  <section-header [title]="'Web Tokens'" [expanded]="expanded"></section-header>
-</div>
-<div>
-  <div class="content" *ngIf="expanded">
-    <p><span class="bold-text">Security with JSON Web Tokens (JWTs)</span>
-      Salting adds an extra layer of security by combining each password with a unique, random string (the salt) before hashing. This prevents attackers from using precomputed tables to crack common passwords.
-    </p>
-    <p>JWTs are compact, URL-safe tokens that securely transmit information between parties as a JSON object. They are digitally signed using a secret key known only to the server, ensuring the authenticity and integrity of the transmitted data.</p>
-    <p class="bold-text">How JWTs Are Used in This Project</p>
-    <p><span class="bold-text">1.	Authentication: </span>
-      After a user successfully creates an account or logs in, the server issues a JWT. This token is then sent to the client and stored locally.
-    </p>
-    <p><span class="bold-text">2.	Authorization: </span>
-      Subsequent requests to protected endpoints, such as those involving creating products, retrieving user details, or managing orders, require the client to include the JWT in the request headers.
-    </p>
-    <p><span class="bold-text">3.	Verification: </span>
-      Upon receiving a request, the server validates the JWT's signature using its secret key. If the token is valid and hasn't expired, the server extracts the user's information from the token's payload, allowing it to verify the user's identity and authorize their actions.
-    </p>
-    <br>
-  </div>
+<div class="content">
+  <p><span class="bold-text">Security with JSON Web Tokens (JWTs)</span>
+    Salting adds an extra layer of security by combining each password with a unique, random string (the salt) before hashing. This prevents attackers from using precomputed tables to crack common passwords.
+  </p>
+  <p>JWTs are compact, URL-safe tokens that securely transmit information between parties as a JSON object. They are digitally signed using a secret key known only to the server, ensuring the authenticity and integrity of the transmitted data.</p>
+  <p class="bold-text">How JWTs Are Used in This Project</p>
+  <p><span class="bold-text">1.	Authentication: </span>
+    After a user successfully creates an account or logs in, the server issues a JWT. This token is then sent to the client and stored locally.
+  </p>
+  <p><span class="bold-text">2.	Authorization: </span>
+    Subsequent requests to protected endpoints, such as those involving creating products, retrieving user details, or managing orders, require the client to include the JWT in the request headers.
+  </p>
+  <p><span class="bold-text">3.	Verification: </span>
+    Upon receiving a request, the server validates the JWT's signature using its secret key. If the token is valid and hasn't expired, the server extracts the user's information from the token's payload, allowing it to verify the user's identity and authorize their actions.
+  </p>
+  <br>
 </div>

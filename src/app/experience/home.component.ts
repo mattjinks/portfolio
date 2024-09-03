@@ -21,6 +21,11 @@ export class ExperienceComponent {
     private navService: NavigationService
   ) {}
 
+  showCommentGeneratorProject() {
+    console.log("Naivagte Comment Generate Project")
+    window.location.href = 'https://medium.com/@mattjinks/code-comment-generator-with-ruby-on-rails-and-openai-0bce18bab911';
+  }
+
   showCloudProject() {
     console.log("Naivagte Cloud Project")
     this.router.navigate(['/cloud-project']);

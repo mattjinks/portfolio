@@ -57,7 +57,7 @@ export class NavBarComponent {
   showExperience() {
     this.navService.resetStates();
     this.navService.setExperienceState(true);
-    this.router.navigate(['/experience']);
+    this.router.navigate(['/projects']);
   }
 
   showResume() {

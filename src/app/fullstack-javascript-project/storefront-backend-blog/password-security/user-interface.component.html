@@ -1,32 +1,28 @@
-<div (click)="toggleExpanded()">
-  <section-header [title]="'Password Security'" [expanded]="expanded"></section-header>
-</div>
-<div>
-  <div class="content-container" *ngIf="expanded">
-    <div class="content">
-      <p>To ensure the security of user passwords, this project utilizes the bcrypt library. Bcrypt is a widely-used password hashing algorithm that employs a technique called salting.</p>
-      <p><span class="bold-text">What is Hashing and Salting? </span></p>
-      <p><span class="bold-text">• Hashing:</span>
-        Hashing transforms a password (or any data) into a fixed-length string of characters that appears random and meaningless. It's designed to be a one-way function, meaning it's virtually impossible to reverse the hash back to the original password.
-      </p>
-      <p><span class="bold-text">• Salting: </span>
-        Salting adds an extra layer of security by combining each password with a unique, random string (the salt) before hashing. This prevents attackers from using precomputed tables to crack common passwords.
-      </p>
 
-      <p><span class="bold-text">How bcrypt Protects User Passwords</span>
-      <p><span class="bold-text">1.	Salt Generation: </span>
-        A unique salt is generated for each user.
-      </p>
-      <p><span class="bold-text">2.	Combined Input: </span>
-        The salt is appended to the user's plain text password.
-      </p>
-      <p><span class="bold-text">3.	Hashing: </span>
-        The combined salt and password string are processed through the bcrypt algorithm, producing a secure hash.
-      </p>
-      <p><span class="bold-text">4.	Storage: </span>
-        The resulting hash (not the original password) is stored in the database along with the salt.
-      </p>
-      <br>
-    </div>
+<div class="content-container">
+  <div class="content">
+    <p>To ensure the security of user passwords, this project utilizes the bcrypt library. Bcrypt is a widely-used password hashing algorithm that employs a technique called salting.</p>
+    <p><span class="bold-text">What is Hashing and Salting? </span></p>
+    <p><span class="bold-text">• Hashing:</span>
+      Hashing transforms a password (or any data) into a fixed-length string of characters that appears random and meaningless. It's designed to be a one-way function, meaning it's virtually impossible to reverse the hash back to the original password.
+    </p>
+    <p><span class="bold-text">• Salting: </span>
+      Salting adds an extra layer of security by combining each password with a unique, random string (the salt) before hashing. This prevents attackers from using precomputed tables to crack common passwords.
+    </p>
+
+    <p><span class="bold-text">How bcrypt Protects User Passwords</span>
+    <p><span class="bold-text">1.	Salt Generation: </span>
+      A unique salt is generated for each user.
+    </p>
+    <p><span class="bold-text">2.	Combined Input: </span>
+      The salt is appended to the user's plain text password.
+    </p>
+    <p><span class="bold-text">3.	Hashing: </span>
+      The combined salt and password string are processed through the bcrypt algorithm, producing a secure hash.
+    </p>
+    <p><span class="bold-text">4.	Storage: </span>
+      The resulting hash (not the original password) is stored in the database along with the salt.
+    </p>
+    <br>
   </div>
 </div>

@@ -1,16 +1,10 @@
-<div (click)="toggleExpanded()">
-  <section-header [title]="'Demo'" [expanded]="expanded"></section-header>
-</div>
-<div>
-  <div class="content" *ngIf="expanded">
-    <div class="video-container">
-      <iframe class="video" allowfullscreen
-        src="https://www.youtube.com/embed/_0yGIeSlTiQ">
-        <!-- https://youtu.be/_0yGIeSlTiQ -->
-      </iframe>
-      <br>
-    </div>
+<div class="content">
+  <div class="video-container">
+    <iframe class="img-thumbnail" allowfullscreen
+      src="https://www.youtube.com/embed/_0yGIeSlTiQ">
+      <!-- https://youtu.be/_0yGIeSlTiQ -->
+    </iframe>
     <br>
   </div>
+  <br>
 </div>
-
