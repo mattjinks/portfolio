@@ -1,0 +1,55 @@
+.content-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  background-color: transparent; /* Makes the background transparent */
+  border: none; /* Removes the border */
+  color: #000; /* Sets the text color to black, adjust as needed */
+  padding: 10px; /* Optional: Adjust padding to your preference */
+  cursor: pointer; /* Ensures the cursor changes to a pointer to indicate clickability */
+}
+
+.page-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+
+.main-content {
+  display: flex;         /* Make main-content a flex container */
+  flex-direction: column;
+  width: 64vw;
+}
+
+section-header {
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    width: 90%;
+  }
+}
+
+.material-symbols-outlined {
+  padding: 0px;
+  padding-bottom: 5px;
+  color: blue;
+}
+
+.material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-size: smaller;
+}
+
+.back {
+  color: blue;
+  cursor: pointer;
+}
+

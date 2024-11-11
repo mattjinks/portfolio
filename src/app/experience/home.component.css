@@ -5,6 +5,7 @@
 }
 
 .container {
+  width: 100vw;
   display: flex;
   justify-content: center;
   margin-bottom: 20px; /* Optional: Add some space between the containers */
@@ -22,13 +23,15 @@
   cursor: pointer;
 }
 
-
 @media (max-width: 768px) {
   .content-container {
     padding-left: 20px;
   }
 
-  .backend, .cloud, .security, .privacy {
+  .backend,
+  .cloud,
+  .security,
+  .privacy {
     width: 64%;
   }
 }

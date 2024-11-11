@@ -7,27 +7,26 @@ import { NavigationService } from '../navigation.service';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [
-    MatIconModule,
-    FlexLayoutModule
-  ],
+  imports: [MatIconModule, FlexLayoutModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
 export class ExperienceComponent {
+  constructor(private router: Router, private navService: NavigationService) {}
 
-  constructor(
-    private router: Router,
-    private navService: NavigationService
-  ) {}
+  showSystemDesignProject() {
+    console.log('Naivagte System Design Project');
+    this.router.navigate(['/system-design-copilot']);
+  }
 
   showCommentGeneratorProject() {
-    console.log("Naivagte Comment Generate Project")
-    window.location.href = 'https://medium.com/@mattjinks/code-comment-generator-with-ruby-on-rails-and-openai-0bce18bab911';
+    console.log('Naivagte Comment Generate Project');
+    window.location.href =
+      'https://medium.com/@mattjinks/code-comment-generator-with-ruby-on-rails-and-openai-0bce18bab911';
   }
 
   showCloudProject() {
-    console.log("Naivagte Cloud Project")
+    console.log('Naivagte Cloud Project');
     this.router.navigate(['/cloud-project']);
   }
 
