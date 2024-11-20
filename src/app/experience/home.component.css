@@ -11,6 +11,10 @@
   margin-bottom: 20px; /* Optional: Add some space between the containers */
 }
 
+.card-body:hover {
+  background-color: rgb(255, 237, 198);
+}
+
 .card-body a {
   margin-right: 12px; /* Adjust this value to increase or decrease spacing */
 }

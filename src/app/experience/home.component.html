@@ -1,5 +1,5 @@
 <div class="content-container">
-  <div class="container">
+  <div class="container" (click)="showSystemDesignProject()">
     <div class="card border-secondary">
       <div class="card-body">
         <h5 class="card-title text-primary" (click)="showSystemDesignProject()">
@@ -11,7 +11,7 @@
           <span style="padding-right: 100vw"></span>
         </p>
         <button class="btn btn-dark" (click)="showSystemDesignProject()">
-          Blog
+          Docs
         </button>
         <a
           href="https://github.com/mattjinks/system-design-copilot"
@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" (click)="showCommentGeneratorProject()">
     <div class="card border-secondary">
       <div class="card-body">
         <h5
@@ -56,7 +56,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" (click)="showCloudProject()">
     <div class="card border-secondary">
       <div class="card-body">
         <h5 class="card-title text-primary" (click)="showCloudProject()">
@@ -68,7 +68,7 @@
           solutions, API management, and deployment.
           <span style="padding-right: 100vw"></span>
         </p>
-        <button class="btn btn-dark" (click)="showCloudProject()">Blog</button>
+        <button class="btn btn-dark" (click)="showCloudProject()">Docs</button>
         <a
           href="https://github.com/mattjinks/Slow-Reverb-Music.git"
           class="btn btn-dark"
@@ -80,7 +80,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" (click)="showBackendProject()">
     <div class="card border-secondary">
       <div class="card-body">
         <h5 class="card-title text-primary" (click)="showBackendProject()">
@@ -94,7 +94,7 @@
           <span style="padding-right: 100vw"></span>
         </p>
         <button (click)="showBackendProject()" class="btn btn-dark">
-          Blog
+          Docs
         </button>
         <a
           href="https://github.com/mattjinks/online-store-backend"
@@ -107,7 +107,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" (click)="showCloudSecurityProject()">
     <div class="card border-secondary">
       <div class="card-body">
         <h5
@@ -123,14 +123,14 @@
           <span style="padding-right: 100vw"></span>
         </p>
         <button (click)="showCloudSecurityProject()" class="btn btn-dark">
-          Blog
+          Docs
         </button>
       </div>
       <div class="card-footer text-body-secondary">2023</div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" (click)="showPrivacyProject()">
     <div class="card border-secondary">
       <div class="card-body">
         <h5 class="card-title text-primary" (click)="showPrivacyProject()">
@@ -143,7 +143,7 @@
           <span style="padding-right: 100vw"></span>
         </p>
         <button (click)="showPrivacyProject()" class="btn btn-dark">
-          Blog
+          Docs
         </button>
       </div>
       <div class="card-footer text-body-secondary">2023</div>
@@ -152,56 +152,3 @@
   <br />
   <br />
 </div>
-<!-- <div class="content-container" fxLayout="row wrap" fxLayoutAlign="start center">
-  <div class="cloud" (click)="showCloudProject()">
-    <div class="header">
-      <p class="bold-text">Developing Solutions with Cloud Services</p>
-    </div>
-    <span class="material-symbols-outlined">
-      cloud
-    </span>
-    <div class="title">
-      <p>Slowed + Reverb Music Streaming Application</p>
-    </div>
-  </div>
-
-  <div class="backend" (click)="showBackendProject()">
-    <div class="header">
-      <p class="bold-text">Backend Development</p>
-    </div>
-    <span class="material-symbols-outlined">
-      database
-    </span>
-    <div class="title">
-      <p>Backend API for Online Store</p>
-    </div>
-  </div>
-
-  <div class="security" (click)="showCloudSecurityProject()">
-    <div class="header">
-      <p class="bold-text">Information Security</p>
-    </div>
-    <span class="material-symbols-outlined">
-      lock
-    </span>
-    <div class="title">
-      <p>Cloud Security Policy</p>
-    </div>
-  </div>
-
-  <div class="privacy" (click)="showPrivacyProject()">
-    <div class="header">
-      <p class="bold-text">Data Privacy</p>
-    </div>
-    <span class="material-symbols-outlined">
-      privacy_tip
-    </span>
-    <div class="title">
-      <p>Privacy Impact Assessment</p>
-    </div>
-  </div>
-</div>
-<div>
-  <br>
-  <br>
-</div> -->
